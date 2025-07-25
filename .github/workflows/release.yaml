@@ -51,9 +51,12 @@ jobs:
           body: |
             ## Docker image
 
-            The service is available as a Docker image from the [GitHub Container Registry](https://github.com/element-hq/lk-jwt-service/pkgs/container/lk-jwt-service)
-            or as standalone static go files attached to this release.
+            The service is available as a Docker image from the [GitHub Container Registry](https://github.com/element-hq/lk-jwt-service/pkgs/container/lk-jwt-service).
 
             ```
             docker pull ghcr.io/element-hq/lk-jwt-service:${{env.IMAGE_VERSION}}
             ```
+
+            ## Precompiled binaries
+
+            The service is available as static precompiled binaries for amd64 and arm64 on linux attached to this release below.
