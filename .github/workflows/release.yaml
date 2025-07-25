@@ -30,6 +30,7 @@ jobs:
           path: build/lk-jwt-service_${{ matrix.os }}_${{ matrix.arch }}
 
   create-release:
+    needs: ["build"]
     runs-on: ubuntu-latest
     steps:
       - name: "Extract version"
